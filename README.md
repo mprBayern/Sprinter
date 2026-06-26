@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<h1>Podcast hören</h1>
+<h1>Podcast anhören</h1>
 
-<audio controls>
+<audio controls style="width: 100%;">
     <source src="podcast.mp3" type="audio/mpeg">
     Dein Browser unterstützt kein Audio.
 </audio>
