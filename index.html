@@ -11,12 +11,34 @@ body {
     padding: 40px;
 }
 
-/* Container */
+/* Zurück-Button */
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Player-Box */
 .player {
     background: #e5e7eb;
     border-radius: 12px;
     max-width: 700px;
     padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+/* Logo oben rechts */
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 40px;
 }
 
 /* Titel */
@@ -26,14 +48,14 @@ body {
     margin-bottom: 15px;
 }
 
-/* Layout links Bild / rechts Player */
+/* Layout */
 .row {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-/* Cover-Bild */
+/* Bild */
 .cover {
     width: 120px;
     height: 120px;
@@ -41,7 +63,7 @@ body {
     object-fit: cover;
 }
 
-/* Player rechts */
+/* Controls */
 .controls {
     flex: 1;
 }
@@ -75,7 +97,15 @@ button {
 
 <body>
 
+<!-- ✅ ZURÜCK-LINK (schon richtig eingebaut!) -->
+<a href="https://www.mpr-bayern.de/de/news#akt_473" class="back">
+    ← Zurück zum Artikel
+</a>
+
 <div class="player">
+
+    <!-- ✅ LOGO -->
+    <img src="logo.png" class="logo">
 
     <div class="title">
         Neuer innovativer Sprinter
@@ -83,10 +113,10 @@ button {
 
     <div class="row">
 
-        <!-- Bild -->
+        <!-- ✅ COVER -->
         <img src="cover.jpg" class="cover">
 
-        <!-- Player -->
+        <!-- ✅ PLAYER -->
         <div class="controls">
 
             <button id="play">▶</button>
@@ -104,7 +134,7 @@ button {
 
 </div>
 
-<!-- Audio -->
+<!-- ✅ AUDIO -->
 <audio id="audio" src="Sprinter.mp3"></audio>
 
 <script>
